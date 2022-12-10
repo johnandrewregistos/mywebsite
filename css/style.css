@@ -330,6 +330,10 @@ header.sticky{
 	opacity: 1;
 }
 
+.portfolio .load-more{
+	text-align: center;
+	margin-top: 1rem;
+}
 .service-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
