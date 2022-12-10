@@ -17,16 +17,16 @@ window.onscroll = () => {
 	navlist.classList.remove('active');
 };
 
-const sr = ScrollReveal ({
-	distance: '85px',
-	duration: 3000,
-	reset: true
-})
+// const sr = ScrollReveal ({
+// 	distance: '85px',
+// 	duration: 3000,
+// 	reset: true
+// })
 
-sr.reveal('.home-text',{delay:350, origin:'left'})
-sr.reveal('.home-img',{delay:350, origin:'right'})
+// sr.reveal('.home-text',{delay:350, origin:'left'})
+// sr.reveal('.home-img',{delay:350, origin:'right'})
 
-sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})
+// sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbweeYr0OQ9zBIKlusrASLhgtHNHTmw2yL1YDQakDK_5C4sEgsgCVOaDGQgF6HEyviLE/exec'
   const form = document.forms['submit-to-google-sheet']
