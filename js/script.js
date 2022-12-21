@@ -43,4 +43,47 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbweeYr0OQ9zBIKlusrASL
 				form.reset()
 			})
       .catch(error => console.error('Error!', error.message))
-  })
+  });
+
+
+	// let btnEl = document.querySelector(".load-more");
+
+	// let currentItem = 4;
+
+
+	// btnEl.addEventListener("click", ()=>{
+	// 	let boxes = [...document.querySelectorAll(".col img")];
+	// 	for (var i = currentItem; i < currentItem + 4; i++){
+	// 		boxes[i].style.display = "inline-block";
+	// 	}
+	// 	currentItem += 4;
+
+	// 	if(currentItem >= boxes.length){
+	// 		btnEl.style.display = "none";
+	// 	}
+	// })
+
+	const portfolioContent = document.querySelector(".portfolio-content");
+	const btns = document.querySelectorAll(".button");
+	const articles = document.querySelectorAll(".content");
+
+
+	portfolioContent.addEventListener("click", (event)=>{
+		
+		const id = event.target.dataset.id
+
+		if(id) {
+			btns.forEach((btn)=>{
+				btn.classList.remove("live");
+			});
+			
+			event.target.classList.add("live");
+			articles.forEach((article)=>{
+				article.classList.remove("live");
+			});
+
+			const element = document.getElementById(id);
+			element.classList.add("live");
+
+		}
+	});
