@@ -334,17 +334,28 @@ header.sticky{
 	transition: transform 0.3s;
 }
 
-.col img:hover{
-	transform: scale(.9);
+
+.website{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .image{
-	max-width: 100%;
+		margin: 1rem auto;
+    background-color: var(--secound-color);
+    border-radius: 12px;
+    position: relative;
+    width: 280px;
+    height: 372px;
+    overflow: hidden;
+}
+
+.image img{
+	/* max-width: 100%; */
 	width: 280px;
 	height: auto;
 	object-fit: cover; 
 	border-radius: 12px;
-	position: relative;
 	overflow: hidden;
 	transition: transform 0.3s;
 }
@@ -360,9 +371,10 @@ header.sticky{
     transition: transform 0.3s ease-in;
 }
 
-.movie:hover > .overview {
+.image:hover > .overview {
     transform: translateY(0);
 }
+
 .content {
 	display: none;
 }
