@@ -148,6 +148,25 @@ span{
 	background: var(--main-color);
 	transition: .5s;
 }
+
+.social2 a{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.5);
+	font-size: 17px;
+	color: var(--bg-color);
+	margin-right: 22px;
+	margin-bottom: 30px;
+}
+.social2 a:hover{
+	transform: scale(1.1);
+	background: var(--main-color);
+	transition: .5s;
+}
 .btn{
 	display: inline-block;
 	color: var(--bg-color);
