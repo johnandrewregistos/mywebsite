@@ -26,7 +26,7 @@ const sr = ScrollReveal ({
  sr.reveal('.home-text',{delay:350, origin:'left'})
  sr.reveal('.home-img',{delay:350, origin:'right'})
 
- sr.reveal('.sub-service,{delay:350, origin:'bottom'})
+//  sr.reveal('.sub-service,{delay:350, origin:'bottom'})
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbweeYr0OQ9zBIKlusrASLhgtHNHTmw2yL1YDQakDK_5C4sEgsgCVOaDGQgF6HEyviLE/exec'
   const form = document.forms['submit-to-google-sheet']
